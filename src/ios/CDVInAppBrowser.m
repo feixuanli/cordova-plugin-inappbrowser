@@ -676,7 +676,7 @@
     self.closeButton = title != nil ? [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStyleBordered target:self action:@selector(close)] : [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(close)];
     self.closeButton.enabled = YES;
     // If color on closebutton is requested then initialize with that that color, otherwise use initialize with default
-    self.closeButton.tintColor = colorString != nil ? [self colorFromHexString:colorString] : [UIColor colorWithRed:60.0 / 255.0 green:136.0 / 255.0 blue:230.0 / 255.0 alpha:1];
+    self.closeButton.tintColor = colorString != nil ? [self colorFromHexString:colorString] : [UIColor colorWithRed:187.0 / 255.0 green:66.0 / 255.0 blue:165.0 / 255.0 alpha:1];
 
     NSMutableArray* items = [self.toolbar.items mutableCopy];
     [items replaceObjectAtIndex:0 withObject:self.closeButton];
